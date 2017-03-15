@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C210B5C81D5D0EB00034E059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210B5C71D5D0EB00034E059 /* AppDelegate.swift */; };
-		C210B5CA1D5D0EB00034E059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210B5C91D5D0EB00034E059 /* ViewController.swift */; };
+		C210B5CA1D5D0EB00034E059 /* CandyCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210B5C91D5D0EB00034E059 /* CandyCardViewController.swift */; };
 		C210B5CD1D5D0EB00034E059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C210B5CB1D5D0EB00034E059 /* Main.storyboard */; };
 		C210B5CF1D5D0EB00034E059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C210B5CE1D5D0EB00034E059 /* Assets.xcassets */; };
 		C210B5D21D5D0EB00034E059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C210B5D01D5D0EB00034E059 /* LaunchScreen.storyboard */; };
+		C210B5DB1D5D10210034E059 /* CandyCardBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210B5DA1D5D10210034E059 /* CandyCardBrain.swift */; };
+		C210B5DD1D5D1D740034E059 /* Candy Card Images in Resources */ = {isa = PBXBuildFile; fileRef = C210B5DC1D5D1D740034E059 /* Candy Card Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C210B5C41D5D0EB00034E059 /* Candy Land Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Candy Land Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C210B5C71D5D0EB00034E059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C210B5C91D5D0EB00034E059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C210B5C91D5D0EB00034E059 /* CandyCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyCardViewController.swift; sourceTree = "<group>"; };
 		C210B5CC1D5D0EB00034E059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C210B5CE1D5D0EB00034E059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C210B5D11D5D0EB00034E059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C210B5D31D5D0EB00034E059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C210B5DA1D5D10210034E059 /* CandyCardBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyCardBrain.swift; sourceTree = "<group>"; };
+		C210B5DC1D5D1D740034E059 /* Candy Card Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Candy Card Images"; path = "../../../../../../../Desktop/Candy Card Images"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		C210B5C61D5D0EB00034E059 /* Candy Land Cards */ = {
 			isa = PBXGroup;
 			children = (
-				C210B5C71D5D0EB00034E059 /* AppDelegate.swift */,
-				C210B5C91D5D0EB00034E059 /* ViewController.swift */,
+				C210B5C91D5D0EB00034E059 /* CandyCardViewController.swift */,
+				C210B5DA1D5D10210034E059 /* CandyCardBrain.swift */,
 				C210B5CB1D5D0EB00034E059 /* Main.storyboard */,
 				C210B5CE1D5D0EB00034E059 /* Assets.xcassets */,
+				C210B5D91D5D0F400034E059 /* Supporting Files */,
+			);
+			path = "Candy Land Cards";
+			sourceTree = "<group>";
+		};
+		C210B5D91D5D0F400034E059 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C210B5C71D5D0EB00034E059 /* AppDelegate.swift */,
+				C210B5DC1D5D1D740034E059 /* Candy Card Images */,
 				C210B5D01D5D0EB00034E059 /* LaunchScreen.storyboard */,
 				C210B5D31D5D0EB00034E059 /* Info.plist */,
 			);
-			path = "Candy Land Cards";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,11 +105,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Cedeno Enterprise Inc.";
 				TargetAttributes = {
 					C210B5C31D5D0EB00034E059 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HC236JEG46;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -122,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C210B5DD1D5D1D740034E059 /* Candy Card Images in Resources */,
 				C210B5D21D5D0EB00034E059 /* LaunchScreen.storyboard in Resources */,
 				C210B5CF1D5D0EB00034E059 /* Assets.xcassets in Resources */,
 				C210B5CD1D5D0EB00034E059 /* Main.storyboard in Resources */,
@@ -135,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C210B5CA1D5D0EB00034E059 /* ViewController.swift in Sources */,
+				C210B5DB1D5D10210034E059 /* CandyCardBrain.swift in Sources */,
+				C210B5CA1D5D0EB00034E059 /* CandyCardViewController.swift in Sources */,
 				C210B5C81D5D0EB00034E059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +194,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -221,8 +241,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -249,10 +271,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = HC236JEG46;
 				INFOPLIST_FILE = "Candy Land Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CedenoEnterpriseInc.Octavio.Candy-Land-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +285,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = HC236JEG46;
 				INFOPLIST_FILE = "Candy Land Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CedenoEnterpriseInc.Octavio.Candy-Land-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +315,7 @@
 				C210B5D81D5D0EB00034E059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
